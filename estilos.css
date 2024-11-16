@@ -89,7 +89,11 @@ nav ul {
     background-color: #6fc4f5; 
   }
   ul li {
-    background-color: #6fc4f5; 
+     color: rgb(58, 56, 56); 
+    text-decoration: none; 
+    background-color: aquamarine;
+    text-align: center; 
+    font-family: 'Waltograph', sans-serif
   
   h3 {
     
