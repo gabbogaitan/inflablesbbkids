@@ -229,17 +229,18 @@ body {
     }
    .cart-toggle { 
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    text-align: center;
+    
     position: fixed; 
-    top: 215px; 
-    right: 10px; 
-    background: rgb(98, 161, 255); 
+    top: 250px; 
+    right: 15px; 
+    background: #3bb9c2; 
     color: white; 
     padding: 10px; 
     cursor: pointer; 
     transform: translateY(-50%);
+    box-shadow: #3bb9c2;
     
-    height: 10px;
+    height: 14px;
    }
    .cart { 
     position: fixed; 
@@ -247,7 +248,8 @@ body {
     top: 0; 
     width: 200px; 
     height: 100%; 
-    background: #ffffff81; box-shadow: -2px 0 5px rgb(76, 231, 252); 
+    background:  #f3bddca8;
+    box-shadow: -2px 0 5px rgb(76, 231, 252); 
     padding: 20px; 
     transition: right 0.3s ease;
     }
@@ -272,10 +274,13 @@ body {
   .cart ul li { 
     display: flex; 
     justify-content:space-between;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    background-color: #f7b2dad5;
+    text-align: center;
   }
   .cart-toggle:hover + .cart, .cart:hover { 
     right: 0; }
+  
   
 
 
