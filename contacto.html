@@ -35,17 +35,18 @@
        <div class="container">
             <div class="form-container" style="margin-left: 1rem;">
                 <form id="contactForm">
-                    <h3>ENVIANOS TU CONSULTA</h3>
-                    Nombre:<br>
-                <input type="text" id="name" name="name" placeholder="Tu nombre"><br>
-                    Correo electrónico:<br>
-                <input type="text" id="email" name="email" placeholder="Tu correo electrónico"><br>
-                    Mensaje:<br>
-                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje"></textarea><br><br>
-                <button type="submit" onclick="sendmessages()" class="image-button">
-                <img src="mensaje.gif" alt="Enviar">
-                </button>
-                </form>
+                    <h3>ENVIANOS TU CONSULTA</h3> 
+                    <label for="nombre">Nombre:</label> <br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    <label for="email">Correo Electrónico:</label> <br>
+                    <input type="email" id="email" name="email" required> <br>
+                    <label for="mensaje">Mensaje:</label> <br>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea> <br>
+                    <button type="submit" class="image-button">
+                        <img src="mensaje.gif" alt="Enviar">
+                    </button>
+                </form>        
+                
             </div>
         </div>
     
@@ -64,8 +65,35 @@
             <iframe src="https://www.instagram.com/inflables.bbkids/embed" width="450" height="100" frameborder="5" scrolling="si" allowtransparency="true"></iframe>
             </div>
         </div>
-        
+    
     </footer>
+    <div class="cart-toggle" onclick="toggleCart()">Carrito</div> 
+    <div id="cart" class="cart"> 
+        <div class="cart-header"> 
+         <h2>Carrito de Compras</h2> 
+         <button onclick="toggleCart()">Cerrar</button> 
+        </div> 
+        <ul id="cart-list"></ul> 
+        <h2>Enviar Carrito</h2> 
+        <form id="contactForm"> 
+         <label for="nombre">Nombre:</label> 
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+
+         <label for="email">Correo Electronico:</label>
+         <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+         
+         <label for="location">Localidad</label>
+         <input type="text" id="location" name="location" placeholder="Localidad" required> 
+
+         <label for="date">Fecha de Entrega</label>
+         <input type="date" id="deliveryDate" name="deliveryDate" placeholder="Fecha de Entrega" required>
+          
+         <input type="hidden" id="cart-items" name="cart-items"> 
+         <button type="submit" onclick="sendCart()" class="image-button">
+          <img src="mensaje.gif" alt="Enviar">
+          </button>
+        </form> 
+        </div>
     
     
 <script src="funciones.js"></script>

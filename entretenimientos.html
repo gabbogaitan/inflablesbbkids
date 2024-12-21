@@ -49,6 +49,33 @@
         <img src="de-billar.png" alt="Producto 4">
         <button onclick="window.location.href='pool.html';">POOL</button>
     </main>
+    <div class="cart-toggle" onclick="toggleCart()">Carrito</div> 
+    <div id="cart" class="cart"> 
+        <div class="cart-header"> 
+         <h2>Carrito de Compras</h2> 
+         <button onclick="toggleCart()">Cerrar</button> 
+        </div> 
+        <ul id="cart-list"></ul> 
+        <h2>Enviar Carrito</h2> 
+        <form id="contactForm"> 
+         <label for="nombre">Nombre:</label> 
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+
+         <label for="email">Correo Electronico:</label>
+         <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+         
+         <label for="location">Localidad</label>
+         <input type="text" id="location" name="location" placeholder="Localidad" required> 
+
+         <label for="date">Fecha de Entrega</label>
+         <input type="date" id="deliveryDate" name="deliveryDate" placeholder="Fecha de Entrega" required>
+          
+         <input type="hidden" id="cart-items" name="cart-items"> 
+         <button type="submit" onclick="sendCart()" class="image-button">
+          <img src="mensaje.gif" alt="Enviar">
+          </button>
+        </form> 
+        </div>
     <footer>
     </footer>
     

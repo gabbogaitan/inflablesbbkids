@@ -37,35 +37,61 @@
       <img src="DJ_boliche.png" alt="Producto 1">
       <h2>DJ BOLICHES</h2>
       
-      <button>agregar al carrito</button>
+      <button onclick="addToCart('DJ BOLICHES')">agregar al carrito</button>
     </div>
     <div class="product-card">
       <img src="DJ_en_evento_empresarial.png" alt="Producto 2">
       <h2>DJ EMPRESARIAL</h2>
       
-      <button>agregar al carrito</button>
+      <button onclick="addToCart('DJ EMPRESARIAL')">agregar al carrito</button>
     </div>
     <div class="product-card">
       <img src="DJ_en_fiesta_de_egresados.png" alt="Producto 3">
       <h2>DJ EGRESADOS</h2>
       
-      <button>agregar al carrito</button>
+      <button onclick="addToCart('DJ EGRESADOS')">agregar al carrito</button>
     </div>
     <div class="product-card">
         <img src="DJ_en_fiesta_elegante.png" alt="Producto 4">
         <h2>DJ CASAMIENTOS/15 AÑOS</h2>
         
-        <button>agregar al carrito</button>
-    </div> 
+        <button onclick="addToCart('DJ CASAMIENTOS/15 AÑOS')">agregar al carrito</button>
+      </div> 
     <div class="product-card">
         <img src="DJ_en_fiesta_infantil.png" alt="Producto 5">
         <h2>DJ INFANTIL</h2>
         
-        <button>agregar al carrito</button>
-    </div>
+        <button onclick="addToCart('DJ INFANTIL')">agregar al carrito</button>
+      </div>
 </div>
+  </main>
+  <div class="cart-toggle" onclick="toggleCart()">Carrito</div> 
+    <div id="cart" class="cart"> 
+        <div class="cart-header"> 
+         <h2>Carrito de Compras</h2> 
+         <button onclick="toggleCart()">Cerrar</button> 
+        </div> 
+        <ul id="cart-list"></ul> 
+        <h2>Enviar Carrito</h2> 
+        <form id="contactForm"> 
+         <label for="nombre">Nombre:</label> 
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
 
-    </main>
+         <label for="email">Correo Electronico:</label>
+         <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+         
+         <label for="location">Localidad</label>
+         <input type="text" id="location" name="location" placeholder="Localidad" required> 
+
+         <label for="date">Fecha de Entrega</label>
+         <input type="date" id="deliveryDate" name="deliveryDate" placeholder="Fecha de Entrega" required>
+          
+         <input type="hidden" id="cart-items" name="cart-items"> 
+         <button type="submit" onclick="sendCart()" class="image-button">
+          <img src="mensaje.gif" alt="Enviar">
+          </button>
+        </form> 
+        </div>
     <footer>
     </footer>
     

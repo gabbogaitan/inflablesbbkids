@@ -32,13 +32,38 @@
      <div id="rgbar"></div>
     </nav>
     <main>
-      //LOCAL STORAGE HACE QUE CUENTE LA CANTIDAD DE CONSULTAS DEL CLIENTE AL HACER CLICK EN HACER CONSULTAS
-      AGREGAR AL CARRITO PARA CONSULTAR EL TOTAL DE LOS SERVICIOS Y MANDAR MAIL POR FORMULARIO CON EL CARRITO//
-    <h3>TODO EL ENTRETENIMIENTO PARA LOS MAS PEQUES!!🤪</h3>
+      <h3>TODO EL ENTRETENIMIENTO PARA LOS MAS PEQUES!!🤪</h3>
     <div class="iframe-container"><iframe width="660" height="415" src="https://www.youtube.com/embed/YHXC2dtdPJk?si=3TMTVUFzO86bKxyU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     
     </main>
+    <div class="cart-toggle" onclick="toggleCart()">Carrito</div> 
+    <div id="cart" class="cart"> 
+        <div class="cart-header"> 
+         <h2>Carrito de Compras</h2> 
+         <button onclick="toggleCart()">Cerrar</button> 
+        </div> 
+        <ul id="cart-list"></ul> 
+        <h2>Enviar Carrito</h2> 
+        <form id="contactForm"> 
+         <label for="nombre">Nombre:</label> 
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+
+         <label for="email">Correo Electronico:</label>
+         <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+         
+         <label for="location">Localidad</label>
+         <input type="text" id="location" name="location" placeholder="Localidad" required> 
+
+         <label for="date">Fecha de Entrega</label>
+         <input type="date" id="deliveryDate" name="deliveryDate" placeholder="Fecha de Entrega" required>
+          
+         <input type="hidden" id="cart-items" name="cart-items"> 
+         <button type="submit" onclick="sendCart()" class="image-button">
+          <img src="mensaje.gif" alt="Enviar">
+          </button>
+        </form> 
+        </div>
     <footer>
     </footer>
     <script src="funciones.js"></script>

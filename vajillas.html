@@ -37,51 +37,65 @@
       <img src="vasos y platos para fiestas de luces led.png" alt="Producto 1">
       <h2>VAJILLA DE LUCES LED</h2>
       
-      <button>agregar al carrito</button>
+      <button onclick="addToCart('vajilla LUCES LED')">agregar al carrito</button>
     </div>
     <div class="product-card">
       <img src="vasos y platos para fiestas rgb.png" alt="Producto 2">
       <h2>VAJILLA "RGB"</h2>
       
-      <button>agregar al carrito</button>
+      <button onclick="addToCart('vajilla RGB')">agregar al carrito</button>
     </div>
     <div class="product-card">
       <img src="platos y vasos para fiestas electrónicas.png" alt="Producto 3">
       <h2>VAJILLA ELECTRONICA</h2>
       
-      <button>agregar al carrito</button>
+      <button onclick="addToCart('vajilla ELECTRONICA')">agregar al carrito</button>
     </div>
     <div class="product-card">
         <img src="vajilla_infantes.png" alt="Producto 4">
         <h2>VAJILLA INFANTES</h2>
         
-        <button>agregar al carrito</button>
+        <button onclick="addToCart('vajilla INFANTES')">agregar al carrito</button>
     </div> 
     <div class="product-card">
         <img src="vajilla_imagen.png" alt="Producto 5">
         <h2>VAJILLA SIMPLE</h2>
         
-        <button>agregar al carrito</button>
+        <button onclick="addToCart('vajilla SIMPLE')">agregar al carrito</button>
     </div>
     <div class="product-card">
         <img src="imagen_vajilla_fina.png" alt="Producto 6">
         <h2>VAJILLA FINA</h2>
             
-        <button>agregar al carrito</button>
+        <button onclick="addToCart('vajilla FINA')">agregar al carrito</button>
     </div>
     <div class="product-card">
         <img src="vajilla para eventos.png" alt="Producto 7">
         <h2>VAJILLA FINA2</h2>
           
-        <button>agregar al carrito</button>
+        <button onclick="addToCart('vajilla FINA2')">agregar al carrito</button>
     </div>
     <div class="product-card">
         <img src="vajilla_cumpleanito.png" alt="Producto 8">
         <h2>VAJILLA CUMPLEAÑITO</h2>
           
-        <button>Agregar al carrito</button>
-    </div>
+        <button onclick="addToCart('vajilla cumpleanito')">agregar al carrito</button>
+      </div>
     </main>
+    <div class="cart-toggle" onclick="toggleCart()">Carrito</div> 
+    <div id="cart" class="cart"> 
+        <div class="cart-header"> 
+         <h2>Carrito de Compras</h2> 
+         <button onclick="toggleCart()">Cerrar</button> 
+        </div> 
+        <ul id="cart-list"></ul> 
+        <h2>Enviar Carrito</h2> 
+        <form id="cart-form" onsubmit="sendCart(event)"> 
+         <input type="email" id="email" placeholder="Tu correo electrónico" required> 
+         <input type="hidden" id="cart-items" name="cart-items"> 
+         <button type="submit">Enviar</button> 
+        </form> 
+        </div>
     <footer>
     </footer>
     
