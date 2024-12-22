@@ -78,6 +78,9 @@ body {
     .wp-fijo { 
       width: 10vw; 
     }
+    body { 
+      background-size: 100% 100%;
+     }
   }
   .container {
     flex-wrap: wrap;
