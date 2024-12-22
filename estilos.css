@@ -233,14 +233,21 @@ body {
     position: fixed; 
     top: 250px; 
     right: 15px; 
-    background: #3bb9c2; 
-    color: white; 
+     
+    color: rgba(255, 255, 255, 0); 
     padding: 10px; 
     cursor: pointer; 
     transform: translateY(-50%);
     box-shadow: #3bb9c2;
     
     height: 14px;
+   }
+   .cart-toggle img { 
+    width: 80px; /* Ajusta el tamaño del GIF según sea necesario */ 
+    height: auto; 
+    display: block;
+    
+    
    }
    .cart { 
     position: fixed; 
