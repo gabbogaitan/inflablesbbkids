@@ -1,12 +1,51 @@
+
 body {
   font-family: fantasy, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(206, 145, 145); 
-  background-image: url('globos.jfif'); 
+  background-color: rgb(206, 145, 145);
+  background-image: url('globos.jfif');
   background-size: cover;
-  box-sizing: border-box; 
-  }
+  box-sizing: border-box;
+  color: black;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: rgb(36, 36, 36);
+  background-image: url('globoscopia.PNG'); 
+  color: rgb(7, 7, 7);
+}
+#contactForm label { 
+  color:#397b8f;
+  
+  
+}
+
+.dark-mode .wp-fijo {
+  background-color: #1d1d1d; 
+  color: rgb(7, 7, 7);
+}
+#toggle-dark-mode {
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  padding: 0; 
+}
+
+#toggle-dark-mode img {
+  width: 30px; 
+  height: auto;
+  
+  display: block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease; 
+}
+
+#toggle-dark-mode img:hover {
+  transform: scale(1.1); 
+}
+
   
   .wp-fijo { 
     position: fixed; 
@@ -14,13 +53,13 @@ body {
     height: auto; 
     bottom: 30px; 
     right: 30px; 
-    background-color: #1cb19dc7; /* Color de fondo para mejor visibilidad */ 
+    background-color: #1cb19dc7; 
     color: #181717; 
-    border-radius: 50%; /* Cambio a 50% para hacerlo circular */ 
+    border-radius: 50%; 
     text-align: center; 
     padding: 5px; 
-    z-index: 9999; /* Ajuste del z-index */ 
-    box-shadow: 2px 2px 6px rgb(1, 1, 1); /* Sombra para mejor visibilidad */ 
+    z-index: 9999; 
+    box-shadow: 2px 2px 6px rgb(1, 1, 1); 
     transition: transform 2s ease;
   } 
   .wp-fijo img { 
